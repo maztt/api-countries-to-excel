@@ -1,9 +1,10 @@
 /**
- * Applies the format and visual styles to the Excel table 
+ * Applies the format and visual styles to the Excel table
  * @param {*} wb - refers to the workbook generated in the main (index.js)
  * @param {*} ws - refers to the worksheet generated in the main (index.js)
  */
 export default function stylesApplier(wb, ws) {
+  console.log('Applying HEADER TABLE and COLUMN names and styles...')
 
   ws.column(3).setWidth(13)
 
@@ -45,4 +46,6 @@ export default function stylesApplier(wb, ws) {
   }
 
   TITLE()
+
+  console.log('Styles applied.')
 }

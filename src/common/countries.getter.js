@@ -8,6 +8,8 @@ export default async function countriesGetter() {
   const COUNTRIES_API = 'https://restcountries.com/v3.1/all'
   const RESPONSE = (await axios.get(COUNTRIES_API)).data
 
+  console.log(RESPONSE)
+
   COUNTRIES = RESPONSE.map(country => {
     const NAME = country.name.common;
     const CAPITAL = country.capital;
@@ -21,6 +23,8 @@ export default async function countriesGetter() {
       (CURRENCIES != null || CURRENCIES != undefined ? `${Object.keys(CURRENCIES)}`: '-')
     ]
   })
+
+  console.log(COUNTRIES)
 
 }
 
