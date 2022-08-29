@@ -6,8 +6,9 @@
  1. npm i // Installs the packages needed
  2. node index.js // Runs the application
 
- Optional:
 
- ** npm i -g jsdoc // Installs the JSDOC to access the documentation
- ** npm jsdoc // Generates the JSDOC documentation
+ ** Optional:
+
+ 0.1 npm i -g jsdoc // Installs the JSDOC to access the documentation
+ 0.2 npm jsdoc // Generates the JSDOC documentation
 
